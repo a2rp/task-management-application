@@ -1,0 +1,52 @@
+.container {
+    // border: 1px solid #f00;
+    margin-top: 30px;
+
+    .heading {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .section1 {
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @media only screen and (width<600px) {
+            flex-wrap: wrap;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            background: transparent;
+            bottom: 0;
+            color: transparent;
+            cursor: pointer;
+            height: auto;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: auto;
+        }
+    }
+
+    .descriptionError {
+        margin-top: 30px;
+    }
+
+    .buttonsContainer {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+
+        .clearButton,
+        .submitButton {
+            width: 150px;
+            height: 40px;
+            overflow: hidden;
+        }
+    }
+}

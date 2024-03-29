@@ -1,0 +1,17 @@
+.container {
+    // border: 1px solid #f00;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .main {
+        width: 100%;
+        max-width: 1400px;
+
+        .title {
+            font-weight: 900;
+            font-size: 20px;
+        }
+    }
+}
